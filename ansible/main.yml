@@ -1,0 +1,16 @@
+---
+#purpose: Instalar e configurar aplicacao devops-challenge
+#author: Willien C. Fernandes (Arquiteto DevOps)
+- name: Instala e Configura aplicacao devops_challenge
+  hosts:
+    localhost:
+      vars:
+        ansible_connection: local
+  remote_user: vagrant
+  roles:
+    # Instala pacotes
+    - 1-instala_pacotes
+    # Configura Nginx
+    #- 2-nginx
+    # Sobe container - aplicação
+    #- 3-docker

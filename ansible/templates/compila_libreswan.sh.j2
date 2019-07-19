@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd /usr/src
+sudo tar zxvf libreswan-3.27.tar.gz
+cd libreswan-3.27
+sudo make clean
+sudo make all USE_DH31=false USE_DNSSEC=false
+sudo make install

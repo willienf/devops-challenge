@@ -1,0 +1,25 @@
+# Configura o arquivo ntp.conf
+- template:
+    src: ntp.conf.j2
+    dest: /etc/ntp.conf
+    owner: root
+    group: root
+    mode: 0644
+  become: true
+  become_method: sudo
+  become_user: root
+
+# Habilita o serviço do ntp automaico
+- name: Habilitando o servico de NTP
+  systemd:
+    state: started
+    name: ntp
+    enabled: yes
+
+#Ajusta o localtime para America/Sao_Paulo
+- name: Setando timezone to America/Sao_Paulo
+  timezone:
+    name: America/Sao_Paulo
+  become: true
+  become_method: sudo
+  become_user: root

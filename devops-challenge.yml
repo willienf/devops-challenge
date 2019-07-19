@@ -1,0 +1,38 @@
+---
+  - name: Instala o pacotes necessarios
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+      - ntp
+      - ntpdate
+      - dnsutils
+      - net-tools
+      - tcpdump
+      - libevent-dev
+      - libnss3-dev
+      - libnspr4-dev
+      - pkg-config
+      - libpam-dev
+      - libcap-ng-dev
+      - libcap-ng-utils
+      - libselinux-dev
+      - libcurl4-nss-dev
+      - libgmp3-dev
+      - flex
+      - bison
+      - gcc
+      - g++
+      - make
+      - libunbound-dev
+      - libnss3-tools
+      - libsystemd-dev
+      - libunbound-dev
+      - libldns-dev
+      - libldap2-dev
+      - libaudit-dev
+      - apt-transport-https
+      state: present
+    become: true
+    become_method: sudo
+    become_user: root
