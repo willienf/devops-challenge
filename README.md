@@ -1,38 +1,31 @@
-Willien Fernandes - devops-challenge
-=====================================
+# Willien Fernandes - devops-challenge
 
-Ambiente devops-challenge Serasa Experian.
+Instruções:
 
-Instruções
-------------
+## Pré-requisitos
 
-Pré-requisitos:
+ - Linux
+   - Git
+   - Vagrant
+   - Virtualbox
 
- - git
- - Vagrant
- - virtualbox
+## Deploy do ambiente
 
-  ---
-  # git clone https://github.com/willienf/devops-challenge.git
-  # cd devops-challenge
-  # vagrant up
+    ---
+    # git clone https://github.com/willienf/devops-challenge.git
+    # cd devops-challenge
+    # vagrant up
+
+## Instruções de Acesso - Aplicação
 
 Após o termino da execução do ambiente via Vagrant, acessar aplicação através:
 
-Browser:
+    ---
+    Browser
+    HTTP:  http://127.0.0.1:8080
+    HTTPS: https://127.0.0.1:4443
+    Curl:
+    # curl 127.0.0.1:8080
+    # curl 127.0.0.1:4443
 
-HTTP:
-http://127.0.0.1:8080
-
-HTTPS:
-http://127.0.0.1:4443
-
-Shell - Curl
-
-HTTP
-  ---
-  #curl 127.0.0.1:80
-
-HTTPS
-  ---
-  #curl 127.0.0.1:4443
+Obrigado
