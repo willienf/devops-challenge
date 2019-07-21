@@ -20,7 +20,6 @@ Instruções:
 
 Após o termino da execução do ambiente via Vagrant, acessar aplicação através:
 
-    ---
     Browser
     HTTP:  http://127.0.0.1:8080
     HTTPS: https://127.0.0.1:4443
