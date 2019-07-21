@@ -10,6 +10,6 @@
     # Instala pacotes
     - 1-instala_pacotes
     # Configura Nginx
-    #- 2-nginx
+    - 2-nginx
     # Sobe container - aplicação
-    #- 3-docker
+    - 3-docker

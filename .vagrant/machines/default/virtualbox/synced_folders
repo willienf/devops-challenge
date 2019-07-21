@@ -1,1 +1,1 @@
-{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/willienf/dc_se/code","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/willienf/dc_se/devops-challenge","disabled":false,"__vagrantfile":true}}}
