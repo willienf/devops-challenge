@@ -12,12 +12,12 @@ Pré-requisitos:
  - Vagrant
  - virtualbox
 
+  ---
+  # git clone https://github.com/willienf/devops-challenge.git
+  # cd devops-challenge
+  # vagrant up
 
-# git clone https://github.com/willienf/devops-challenge.git
-# cd devops-challenge
-# vagrant up
-
-Após o termino da execução do ambiente via Vagrant, acessar atraves:
+Após o termino da execução do ambiente via Vagrant, acessar aplicação através:
 
 Browser:
 
@@ -30,7 +30,9 @@ http://127.0.0.1:4443
 Shell - Curl
 
 HTTP
-#curl 127.0.0.1:80
+  ---
+  #curl 127.0.0.1:80
 
 HTTPS
-#curl 127.0.0.1:4443
+  ---
+  #curl 127.0.0.1:4443
